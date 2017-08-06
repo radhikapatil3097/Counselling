@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<title>Counselling-Info</title>
+	<link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/9/97/DBIT_logo.png" type="image/png"></link>
+
+	<style type="text/css">
+
+
+		hr{
+			border:0.1px solid steelblue;
+		}
+
+		img {
+			opacity: 1.0;
+			filter:alpha(opacity=100);
+    		width: 222px;
+    		height: 227px;
+   			border:1px solid grey;
+   		/* -webkit-transition: width 0.5s; For Safari 3.1 to 6.0 
+   		 transition: width 0.5s;
+			}
+		img:hover {
+		height:232px;
+    	width: 227px; */
+			}
+
+		img:hover {
+   			 opacity: 0.95;
+    		 filter: alpha(opacity=95);
+    		 border: 1px solid black;
+				}
+
+		td{
+			text-align:center;
+		  }
+
+		header{
+				background:steelblue;
+			}
+
+		body {
+				background-color:white ;
+				background-repeat: no-repeat;
+		 }
+
+		blockquote{
+				margin-left:20%;
+				margin-right:20%;
+		    	padding: 5px;
+			    background-color:#3d259e;
+		    	border-left: 10px solid black;
+			}
+
+
+		input[type=submit] {
+				background-color: #e67e22;
+				color: white;
+				padding: 5px 8px;
+				margin: 4px 0;
+				border: none;
+				border-radius: 3px;
+				cursor: pointer;
+			}
+
+		input[type=submit]:hover {
+				background-color:#161f41;
+			}
+
+
+		p {
+			    text-indent: 50px;
+			}
+
+		fieldset{
+				margin-left: 25%;
+				margin-right:25%;
+				display: block;
+				width: 50%;
+				box-shadow: 2px solid grey;
+				background-color:#CF5555 ;
+			}
+
+		h2 , h3{
+				font-family: serif;
+			}
+
+
+		.morecontent span {
+		    display: none;
+		}
+
+
+		.morelink {
+		    display: block;
+		}
+			a{
+				text-decoration: none;
+				color:black;
+			}
+
+      	ul{
+				list-style-type: none;
+				margin: 2;
+				padding: 2;
+				overflow: hidden;
+				background-color:steelblue;
+				/*background:#e67e22;*/
+			}
+
+		li{
+        	float: left;
+       		border-right:1px solid #161f41;
+			}
+
+
+		li a{
+				display: block ;
+				color: white;
+				text-align: right;
+				padding: 10px;
+				text-decoration:none;
+
+			}
+
+		li a:hover:not(.active){
+				background-color:#161f41;
+				text-decoration:none;
+			}
+
+      	.active {
+    		background-color:#161f41 ;
+			}
+
+      	li:last-child {
+    		border-right: none;
+     	 }
+
+
+		.container {
+    		position: relative;
+    		width: 50%;
+			}
+
+		.image {
+  			opacity: 1;
+  			display: block;
+  			width: 100%;
+  			height: auto;
+  			transition: .5s ease;
+  			backface-visibility: hidden;
+			}
+
+		.middle {
+  			transition: .5s ease;
+  			opacity: 0;
+  			position: absolute;
+  			top: 50%;
+  			left: 50%;
+  			transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%)
+			}
+
+		.container:hover .image {
+  			opacity: 0.3;
+			}
+
+		.container:hover .middle {
+  			opacity: 1;
+			}
+
+		.text {
+  			background-color: #4CAF50;
+  			color: white;
+  			font-size: 16px;
+  			padding: 16px 32px;
+			}
+
+
+
+	</style>
+</head>
+
+
+<body bgcolor="steelblue">
+<br>
+<!--
+	<script>
+	function bigImg(x) {
+   		x.style.height = "231px";
+    	x.style.width = "226px";
+	}
+
+	function normalImg(x) {
+    	x.style.height = "227px";
+    	x.style.width = "222px";
+	}
+	</script>
+
+-->
+	<header>
+	<table align="center">
+		<tr>
+			<td><img src="dbitlogo.png" alt="DBIT LOGO" style="width: 75px;height: 75px;"></td>
+			<td><font size="6" color="white">DON BOSCO INSTITUTE OF TECHNOLOGY</font><br>
+			    <center><font size="6" color="white">COUNSELLING DEPARTMENT</font></center>
+			</td>
+		</tr>
+	</table>
+</header>
+
+  <hr>
+
+  <br>
+
+  		<ul id="gp" align="center">
+          <li><a href="homepage.html" >Home</a></li>
+	  	  <li><a href="#">About Us</a></li>
+          <li><a href="counselfinal.html">Take a test !</a></li>
+          <li><a href="#" class="active">Food for thought ! </a></li>
+          <li><a href="http://www.dbit.in/index.php/contact-us">Contact Us</a></li>
+          
+          <li style="float:right"><a href="http://www.dbit.in/">Exit</a></li>
+          <li style="float:right"><a href="rad1.php">Admin</a></li>
+        </ul>
+
+
+<br><br><br>
+
+<h3>Following are the issues which need to be counselled:</h3><br>
+<h4>Please click on the links to find out more...</h4>
+
+<table align="center" cellspacing="20">
+<tr>
+<td><a href="a1.html"><img src="i1.jpeg" onmouseover="bigImg(this)" onmouseout="normalImg(this)"></img></a><br><a href="a1.html"><h4><u>Academic problems</u></h4></a></td>
+<td><a href="a2.html"><img src="i2.jpeg" border="1px"></img></a><br><a href="a2.html"><h4><u>Addictions</u></h4></a></td>
+<td><a href="a3.html"><img src="i3.jpeg" border="1px"></img></a><br><a href="a3.html"><h4><u>Emotional Issues</u></h4></a></td>
+<td><a href="a4.html"><img src="i4.jpeg" border="1px"></img></a><br><a href="a4.html"><h4><u>Aggression</u></h4></a></td>
+<td><a href="a5.html"><img src="i5.jpg" border="1px"></img></a><br><a href="a5.html"><h4><u>Psychosis</u></h4></a></td>
+</tr>
+<tr>
+<td><a href="a6.html"><img src="i6.jpeg" border="1px"></img></a><br><a href="a6.html"><h4><u>LGBT</u></h4></a></td>
+<td><a href="a7.html"><img src="i7.jpg" border="1px"></img></a><br><a href="a7.html"><h4><u>Personal Issues</u></h4></a></td>
+<td><a href="a8.html"><img src="i8.jpeg" border="1px"></img></a><br><a href="a8.html"><h4><u>Adjustment issues</u></h4></a></td>
+<td><a href="a9.html"><img src="i9.jpeg" border="1px"></img></a><br><a href="a9.html"><h4><u>Low self- esteem</u></h4></a></td>
+<td><a href="a10.html"><img src="i10.jpeg" border="1px"></img></a><br><a href="a10.html"><h4><u>Sexual behaviour</u></h4></a></td>
+</tr>
+</table>
+
+<br>
+<center><a href="a11.html"><img src="i11.jpeg" border="1px"></img></a><br><a href="a11.html"><h4><u>Pressure-related issues</u><h4></h4></center>
+
+	
+<!--
+	<center>
+		<fieldset>
+			<span class="more">
+				<legend>List of issues</legend>
+				<br><blockquote>
+					Academic problems:
+				</blockquote>
+
+<hr>
+				&nbsp&nbsp&nbsp&nbsp&nbsp<b>Exam anxiety</b>
+<hr>
+				<p>Exam or Test anxiety is a combination of physiological over-arousal, tension and somatic symptoms, along with worry, dread, fear of failure, and catastrophizing, that occur before or during test situations.
+It is a physiological condition in which people experience extreme stress, anxiety, and discomfort during and/or before taking a test. This anxiety creates significant barriers to learning and performance.<br>
+<br>&bull;	Inferior performance arises not because of intellectual problems or poor academic preparation, but because testing situations create a sense of threat for those experiencing test anxiety; anxiety resulting from the sense of threat then disrupts attention and memory function.
+<br>&bull;	Students who experience test anxiety tend to be easily distracted during a test, experience difficulty with comprehending relatively simple instructions, and have trouble organizing or recalling relevant information.
+<br>&bull;	Headache, upset stomach, feeling of fear, feeling of dread, shortness of breath, sweating, pacing or fidgeting, crying, racing thoughts and blanking out are some physical symptoms.
+<br>&bull;	During states of excitement or stress, the body releases adrenaline. Adrenaline is known to cause physical symptoms that accompany test anxiety, such as increased heart rate, sweating, and rapid breathing.</p>
+
+
+		<br><br>
+<hr>
+			&nbsp&nbsp&nbsp&nbsp&nbsp<b>Subject Specific fear</b>
+<hr>
+			<p>Subject specific fear/ anxiety is a phenomenon that is often considered, when examining student &#8217;s problems in a specific academic subject. It a feeling of tension, apprehension, or fear that interferes with one &#8217;s performance in the subject.<br>
+<br>&bull;Subject specific fear/anxiety is related to poor performance on achievement tests and is related to negative attitudes concerning that subject.
+<br>&bull;The anxiety/fear leads to avoidance of that subject. Those having the fear will avoid situations in which they have to deal with that subject.
+<br>&bull;Unfortunately, avoidance results in less competency, exposure and practice, leaving students more anxious and unprepared to achieve.
+<br>&bull;In college and university, anxious students take fewer courses related to that subject and tend to feel negative towards it.
+<br>&bull;When a highly anxious student performs disappointingly on a particular question, it could be due to anxiety, or the lack of competency in the subject because of avoidance.
+<br>&bull;Subject specific anxiety is not simply about being bad at it.
+<br>&bull;The thought of having to study that feared subject causes anxiety.
+<br>&bull;Studies have shown that the area of the brain that is triggered when someone has subject specific fear/anxiety overlaps the same area of the brain where bodily harm is registered.</p>
+
+<hr>
+
+			&nbsp&nbsp&nbsp&nbsp&nbsp<b>Presentation fear</b>
+<hr>
+
+			<p>Fear of public speaking i.e. presentation fear is the most common of all phobias. It's a form of performance anxiety in which a person becomes very concerned that he or she will look visibly anxious, maybe even have a panic attack while speaking.
+
+<br>&bull;	Oral presentations are a standard component of pedagogy and assessment, yet are sheer personal torture for many students. Their fear of public performance also renders a presentation less effective as a learning rubric.
+<br>&bull;	Over time, people try to protect themselves by either avoiding public speaking or by struggling against speech anxiety. In this way, people get tricked into making the fear of public speaking more chronic and disruptive.
+<br>&bull;	Some people do this with avoidance. They choose college coursework in such a way as to avoid public speaking, rather than taking the classes they want.
+<br>&bull;	At work, they pass up promotions and assignments which would require speaking.
+<br>&bull;	The fear of public speaking may even lead people to choose a career that doesn't call for public speaking, rather than one they want. This is often the case with people who have feared public speaking from a very young age.</p>
+
+
+
+<hr>
+				<blockquote>
+					Addictions
+				</blockquote>
+				<hr>
+<p>Addiction can be defined as the continued use of a mood altering substance or behaviour despite adverse consequences.
+Some addicts are good at hiding the extent of their dependence, but there is usually at least some evidence that something is not right. Friends and family are most often the ones who first become aware of the addiction, and they will become concerned.
+The most common reaction is for the addict to then become defensive when these concerns are mentioned. They are in denial about the problem. As the downward spiral continues the evidence of the addiction becomes increasingly obvious until even the addict is unable to deny it.
+The symptoms of addiction will be psychological and physical in nature.
+<b><hr>The symptoms of psychological addiction can include:<br></b>
+<br>&bull;	Intense cravings to use the substance.
+<br>&bull;	Feelings of high anxiety if they try to end the addiction.
+<br>&bull;	Loss of appetite.
+<br>&bull;	 The person feels unable to cope without this substance.
+<br>&bull;	 Denial about their problems
+<br>&bull;	Feelings of restlessness when not using the substance
+<br>&bull;	A mental obsession with obtaining and using alcohol or drugs.
+<br>&bull;	Symptoms of depression when the individual tries to stop using the substance.
+<br>&bull;	Anxiety at the thought of not having access to the substance.
+<br>&bull;	Insomnia if the person doesn	&#x27;t use the drug or perform the behaviour.
+<br>&bull;	The individual can continue to romance the drink or drug many years after they have stopped using it. The cravings occur less frequently once the individual has established themselves in recovery, but they can still reappear at the most unexpected moments.
+<br>&bull;	Mood swings
+<br>&bull;	Physical damage to the brain leads to psychological symptoms such as loss of memory, personality changes, or confusion. An example of this would be alcoholic dementia.
+
+<hr><b>
+The symptoms of physical addiction can include:<br></b>
+<br>&bull;	Nausea and vomiting
+<br>&bull;	Body aches
+<br>&bull;	Seizures
+<br>&bull;	Changes to pulse rate
+<br>&bull;	Changes to blood pressure
+<br>&bull;	Noticeable shaking or body tremors
+<br>&bull;	Headaches
+<br>&bull;	Sweating
+<br>&bull;	High temperatures
+<br>&bull;	Changes to respiratory rate
+<br>&bull;	Diarrhoea
+<br>&bull;	Restless leg syndrome
+<br></p>
+
+
+<hr><b> Alcohol </b><br><hr>
+<p>
+	Alcohol addiction, also known as alcoholism, is a widespread disease that affects people of all walks of life. While experts have long tried to pinpoint genetic, gender, racial, or socioeconomic factors that may predispose someone to alcohol addiction, it appears that it has no singular cause and can afflict anyone.
+	Sign and Symptoms:-
+	Physical signs of alcohol overconsumption and intoxication are recognizable by most adults:<br>
+	<br>&bull;	Slurred or incoherent speech
+	<br>&bull;	Poor balance and clumsiness
+	<br>&bull;	Delayed reflexes
+	<br>&bull;	Stomach pains, vomiting or nausea
+	<br>&bull;	Loss of consciousness or blacking-out
+	<br>&bull;	Redness of the face during or after periods of consumption
+	It is possible for a person to reach a level of intoxication that becomes life-threatening (alcohol poisoning). The respiratory system becomes depressed, and the person will stop breathing.
+
+	How Does Alcohol Affect the Body?
+	<br>&bull;	Alcohol acts as a depressant on the central nervous system. It has a complex mode of action and affects multiple systems in the brain
+	<br>&bull;	 Alcohol is metabolized by the liver. Long term consumption of alcohol in excessive amounts can cause irreversible damage to the liver.
+</p><br>
+
+<hr><b> Drugs </b><br><hr>
+<p>What Is Drug Addiction?<br>
+<br>&bull;	Addiction is a chronic, often relapsing brain disease that causes compulsive drug seeking and use, despite harmful consequences to the addicted individual and to those around him or her.
+<br>&bull;	 Although the initial decision to take drugs is voluntary for most people, the brain changes that occur over time challenge an addicted person	&#x27;s self-control and hamper his or her ability to resist intense impulses to take drugs.
+Why Do Some People Become Addicted While Others Do Not?
+No single factor can predict whether a person will become addicted to drugs. Risk for addiction is influenced by a combination of factors that include individual biology, social environment, and age or stage of development. The more risk factors an individual has, the greater the chance that taking drugs can lead to addiction. For example:
+<br>&bull;	Biology. The genes that people are born with, in combination with environmental influences, account for about half of their addiction vulnerability. Additionally, gender, ethnicity, and the presence of other mental disorders may influence risk for drug abuse and addiction.
+<br>&bull;	Environment. A person	&#x27;s environment includes many different influences, from family and friends to socioeconomic status and quality of life in general. Factors such as peer pressure, physical and sexual abuse, stress, and quality of parenting can greatly influence the occurrence of drug abuse and the escalation to addiction in a person	&#x27;s life.
+<br>&bull;	Development. Genetic and environmental factors interact with critical developmental stages in a person	&#x27;s life to affect addiction vulnerability. Although taking drugs at any age can lead to addiction, the earlier that drug use begins, the more likely it will progress to more serious abuse, which poses a special challenge to adolescents. Because areas in their brains that govern decision making, judgment, and self-control are still developing, adolescents may be especially prone to risk-taking behaviours, including trying drugs of abuse.
+</p><br>
+
+<hr><b> Smoking </b><br><hr>
+<p>Nicotine is a drug found naturally in tobacco, which is as addictive as heroin or cocaine: When taken in small amounts, nicotine creates pleasant feelings that make the smoker want to smoke more. It acts on the chemistry of the brain and central nervous system, affecting the smoker's mood.
+    Why is nicotine addictive?
+		<br>
+<br>&bull;	When you use tobacco products, nicotine is quickly absorbed into your bloodstream. Within 10 seconds of entering your body, the nicotine reaches your brain. It causes the brain to release adrenaline, creating a buzz of pleasure and energy.
+<br>&bull;	The buzz fades quickly though, and leaves you feeling tired, a little down, and wanting the buzz again. This feeling is what makes you light up the next cigarette. Since your body is able to build up a high tolerance to nicotine, you	&#39;ll need to smoke more and more cigarettes in order to get the nicotine	&#39;s pleasurable effects and prevent withdrawal symptoms.This up and down cycle repeats over and over, leading to addiction.
+
+<hr><b>
+The Effects of Smoking on the Body
+</b><br>
+    Tobacco smoke is enormously harmful to your health. There	&#39;s no safe way to smoke. Replacing your cigarette with a cigar, pipe, or hookah won	&#39;t help you avoid the health risks associated with tobacco products.
+
+<br>&bull;	Central Nervous System
+<br>&bull;	Respiratory System
+<br>&bull;	Cardiovascular System
+<br>&bull;	Skin, Hair, and Nails (Integumentary System)
+<br>&bull;	Digestive System
+<br>	&bull;	Sexuality and Reproductive System
+</p>
+
+				<blockquote>
+					Emotional Issues
+				</blockquote>
+
+				<hr><b> Anxiety </b><br><hr>
+		<p>		Chronic anxiety, also referred to as generalized anxiety disorder (GAD), is characterized by excessive, exaggerated worry about everyday life events. People with symptoms of GAD tend to always expect disaster and appear to be unable to stop worrying about health, money, family, work or school. Generalized anxiety disorder not only affects the way a person thinks, feels, and behaves, but can lead to physical symptoms as well.<br>
+			<b>
+Signs and symptoms of generalized anxiety disorder include:</b>
+<br>&bull;	excessive, ongoing worry and tension
+<br>&bull;	an unrealistic view of problems
+<br>&bull;	restlessness or a feeling of being edgy
+<br>&bull;	irritability
+<br>&bull;	muscle tension
+<br>&bull;	muscle aches
+<br>&bull;	headaches
+<br>&bull;	sweating
+<br>&bull;	difficulty concentrating
+<br>&bull;	nausea
+<br>&bull;	the need to go to the bathroom frequently
+<br>&bull;	tiredness
+<br>&bull;	fidgeting
+<br>&bull;	trouble falling or staying asleep
+<br>&bull;	trembling
+<br>&bull;	being easily startled
+<br>&bull;	numbness in hands and feet
+<br>&bull;	difficulty swallowing
+<br>&bull;	bouts of difficulty breathing
+<br>&bull;	trembling
+<br>&bull;	twitching
+<br>&bull;	hot flashes
+<br>&bull;	rashes
+</p>
+
+
+					<hr><b> Depression </b><br><hr>
+<p>
+	Depression is a serious illness that can take a terrible toll on women and families.
+<br>
+	<b>Signs and symptoms of depression include:</b>
+	 <br> &bull;	Loss of interest in normal daily activities
+	 <br> &bull;	Feeling sad or down
+	 <br> &bull;	Feeling hopeless
+	 <br> &bull;	Crying spells for no apparent reason
+	 <br> &bull;	Problems sleeping
+	 <br> &bull;	Trouble focusing or concentrating
+	 <br> &bull;	Difficulty making decisions
+	 <br> &bull;	Unintentional weight gain or loss
+	 <br> &bull;	Irritability
+	 <br> &bull;	Restlessness
+	 <br> &bull;	Being easily annoyed
+	 <br> &bull;	Feeling fatigued or weak
+	 <br> &bull;	Feeling worthless
+	 <br> &bull;	Thoughts of suicide or suicidal behaviour
+	 <br> &bull;	Unexplained physical problems, such as back pain or headaches
+	What Are the Effects of Depression?
+	Depression can lead to a downward spiral of disability, dependency and suicide. Depression can be associated with severe emotional, behavioural, and health problems, including:
+	 <br> &bull;	Suicide
+	 <br> &bull;	Alcohol abuse
+	 <br> &bull;	Substance abuse
+	 <br> &bull;	Anxiety disorders
+	 <br> &bull;	Eating disorders (bulimia, anorexia, compulsive overeating, binge eating)
+	 <br> &bull;	Heart disease and other medical conditions
+	 <br> &bull;	Work or school problems
+	 <br> &bull;	Family conflicts
+	 <br> &bull;	Relationship difficulties
+	 <br> &bull;	Social isolation</p>
+
+
+						<hr><b> Suicide  </b><br><hr>
+						<p>
+
+ <br> &bull;	Suicide, also known as completed suicide, is the "act of taking one's own life". Attempted suicide or non-fatal suicidal behaviour is self-injury with the desire to end one's life that does not result in death.¬
+ <br> &bull;	 Assisted suicide is when one individual helps another bring about their own death indirectly via providing either advice or the means to the end. This is in contrast to euthanasia, where another person takes a more active role in bringing about a person's death. Suicidal ideations is thoughts of ending one's life but not taking any active efforts to do so.
+<br>There is discussion about the appropriateness of the term commit and its use to describe suicide. Those who object to the use of commit argue that it carries with it implications that suicide is a criminal, sinful or morally wrong act.
+
+					</p>
+
+
+	<blockquote>
+				Agression
+	</blockquote>
+
+<p>
+	In psychology, the term aggression refers to a range of behaviours that can result in both physical and psychological harm to oneself, other or objects in the environment. The expression of aggression can occur in a number of ways, including verbally, mentally, and physically. Psychologists distinguish between different forms of aggression, different purposes of aggression, and different types of aggression.
+<br><b>	Forms of Aggression </b><br>
+	Aggression can take a variety of forms, including:
+	 <br> &bull;	Physical
+	 <br> &bull;	Verbal
+	 <br> &bull;	Mental
+	 <br> &bull;	Emotional
+	 <br>
+<b>	Purposes of Aggression</b><br>
+	Aggression can also serve a number of different purposes:
+	 <br> &bull;	To express anger or hostility
+	 <br> &bull;	To assert dominance
+	 <br> &bull;	To intimidate or threaten
+	 <br> &bull;	To achieve a goal
+	 <br> &bull;	To express possession
+	 <br> &bull;	A response to fear<br>
+	<b>Two Types of Aggression</b><br>
+	Psychologists also distinguish between two different types of aggression:
+	 <br> &bull;	Impulsive aggression, also known as affective aggression, is characterized by strong emotions, usually anger. This form of aggression is not planned and often takes place in the heat of the moment. When another car cuts you off in traffic and you begin yelling and berating the other driver, you are experiencing impulsive aggression.
+	 <br> &bull;	Instrumental aggression, also known as predatory aggression, is marked by behaviours that are intended to achieve a larger goal. Instrumental aggression is often carefully planned and usually exists as a means to an end. Hurting another person in a robbery or car-jacking is an example of this type of aggression. The aggressors goal is to obtain money or a vehicle, and harming another individual is the means to achieve that aim.
+</p>
+
+<blockquote>
+				Psychosis
+</blockquote>
+<p>
+			The term ‘psychosis' is used to describe when a person loses touch with reality. Young people can behave very differently when they are feeling stressed, confused or very upset. In fact, these are rarely signs of mental illness. Psychosis is usually more severe and disabling.
+			<br>
+			<b>How common is it?</b><br>
+
+‘Psychosis' can affect people of all ages, but becomes increasingly common as people reach young adulthood.
+<br><b>
+	What causes psychosis?
+</b><br>
+When a person has a psychotic episode, it can be a signal of an underlying illness. You can have a ‘psychotic breakdown	&#39; after a stressful event like losing a close friend or relative. It can also be the result of a physical illness like a severe infection, the use of illegal drugs like cannabis, or a severe mental illness like schizophrenia or bipolar disorder. Sometimes it is difficult to know what caused the illness.
+These pages explain what psychosis is and its possible causes and treatments. You will find them useful if you are affected by psychosis or if you have a friend or family member who is affected.
+ <br> &bull;	Psychosis is a medical term used to describe hearing or seeing things, or holding unusual beliefs that other people do not share.
+ <br> &bull;	Common examples include hearing voices or believing that people are trying to do you harm.
+ <br> &bull;	You can experience psychosis for a wide variety of reasons. For example it can be due to having a mental illness such as schizophrenia or bipolar disorder. It can also be caused by drug use, brain injury or extreme stress.
+ <br> &bull;	There is no one single cause of psychosis but researchers believe that genes, biological factors and environment may play a part.
+ <br> &bull;	In the NHS, you should be offered medication and cognitive behavioural therapy (CBT) to help with your symptoms.
+ <br> &bull;	To access treatment for psychosis, you usually need to have an assessment by specialist mental health services.
+ <br> &bull;	If you are experiencing very severe psychotic symptoms you may need more urgent help such as going into hospital.
+ <br> &bull;	If you are trying to communicate with a person experiencing psychosis there are communication methods you can try.
+ <br> &bull;	There are different perspectives on how we should view and deal with psychosis. This includes listening to the voices or trying to understand the meaning of the unusual beliefs.
+
+
+</p>
+
+<blockquote>
+	LGBT
+</blockquote>
+<p>
+<b>What Is LGBT?</b>
+
+ <br> &bull;	LGBT stands for lesbian, gay, bisexual and transgender and along with heterosexual they describe people's sexual orientation or gender identity. These terms are explained in more detail here.
+
+<br><b>Lesbian</b>
+ <br> &bull;	A lesbian woman is one who is romantically, sexually and/or emotionally attracted to women. Many lesbians prefer to be called lesbian rather than gay.
+
+
+ <br float="left"><b>Gay</b>
+  <br> &bull;	A gay man is one who is romantically, sexually and/or emotionally attracted to men. The word gay can be used to refer generally to lesbian, gay and bisexual people but many women prefer to be called lesbian.
+  <br> &bull;	Most gay people don't like to be referred to as homosexual because of the negative historical associations with the word and because the word gay better reflects their identity.
+
+ <br><b>Bisexual</b>
+  <br> &bull;	A bisexual person is someone who is romantically, sexually and/or emotionally attracted to people of both sexes.
+
+ <br><b>Transgender or Trans</b>
+  <br> &bull;	Is an umbrella term used to describe people whose gender identity (internal feeling of being male, female or transgender) and/or gender expression, differs from that usually associated with their birth sex.
+  <br> &bull;	Not everyone whose appearance or behaviour is gender-atypical will identify as a transgender person. Many transgender people live part-time or full-time in another gender. Transgender people can identify as transsexual, transvestite or another gender identity.
+
+ <br><b>Gender Identity</b>
+  <br> &bull;	One's gender identity refers to whether one feels male, female or transgender (regardless of one's biological sex). Gender expression refers to outwardly expressing one's gender identity.
+  <br> &bull;	Transsexual people live or wish to live full time as members of the gender other than that assigned at birth. Transsexual people can seek medical interventions, such as hormones and surgery, to make their bodies fit as much as possible with their preferred gender.
+  <br> &bull;	The process of transitioning from one gender to another is called gender reassignment.
+  <br> &bull;	Biological females who wish to live and be recognised as men are called female-to-male (FTM) transsexuals or trans men. Biological males who wish to live and be recognised as women are called male-to-female (MTF) transsexuals or trans women.
+
+  <br> &bull;	Transvestite or cross-dressing individuals are thought to comprise the largest transgender sub-group. Cross-dressers sometimes wear clothes considered appropriate to a different gender.
+  <br> &bull;	A small number can go on to identify as transsexual.
+</p>
+
+<blockquote>
+Personal Issues
+</blockquote>
+
+<hr><b> Family Issues </b><br><hr>
+<p>Family problems represent a unique, but common, category of adjustment difficulty that causes people to seek psychological treatment.
+These problems can lead to the development of adjustment problems in one or more members of the family. But, because the family relationships are a part of the problem, it is necessary to change the structure of the family relationships.
+<b>Some issues commonly faced are:</b>
+ <br> &bull;	Birth of a Second Child
+ <br> &bull;	Bonding with Grandparents
+ <br> &bull;	Children with Lesbian, Gay, Bisexual and Transgender Parents
+ <br> &bull;	Families in the Military
+ <br> &bull;	Family Arguments
+ <br> &bull;	Family Disruptions
+ <br> &bull;	Family Meals
+ <br> &bull;	Home Alone Children
+ <br> &bull;	Importance of Family Routines
+ <br> &bull;	Improving Family Communications
+ <br> &bull;	Roles within the Family
+ <br> &bull;	Small Families
+ <br> &bull;	Stepsiblings
+ <br> &bull;	Taking Care of Your Grandchildren
+ <br> &bull;	Working Parents
+</p>
+
+
+<hr><b> Relationship Breakups </b><br><hr>
+<p>
+	Nearly everyone experiences the pain of a breakup of an important love relationship at some point in life.
+	Many people are forced to cope for the first time with the breakup of a significant relationship during their college years.  It is difficult to know just how painful a relationship breakup can be until it happens in one	&#39;s own life.
+	 Intense feelings of sadness and despair are a common reaction to the end of a relationship.  The following are common emotional reactions to the loss of a romantic relationship:
+	 <br> &bull;	Denial 	&#8722; It may be very difficult to believe and accept that the relationship is ending.  It is painful to experience a loved and trusted partner seeming to care so little about the relationship and your feelings.
+	 <br> &bull;	Grief and Despair 	&#8722; It is normal to feel sad and lonely, and to cry a lot.    You may feel an intense need at times to make contact with your ex-partner.  Particular times during the day, such as waking up in the morning, may be especially difficult.
+	 <br> &bull;	Fear 	&#8722; It may be frightening and difficult to imagine life without the significant other.  You may fear that you will never find love or feel happy again.
+	 <br> &bull;	Anger 	&#8722; Anger with a partner who has caused pain by initiating or contributing to the breakup is a common emotional response.
+	 <br> &bull;	Self-blame and Guilt 	&#8722; You may obsess over what you could have done to cause the breakup, and may attempt to “bargain” with an ex-partner to give the relationship another chance.    If you initiated the breakup, you may feel guilty about causing pain to your partner.
+	 <br> &bull;	Jealousy 	&#8722; You may experience jealousy or panic about your partner potentially being with someone else.
+	 <br> &bull;	Confusion 	&#8722; Life may feel strange or incomplete without your significant other.  You may question who you are, and the meaning of life without your partner.
+	 <br> &bull;	Relief 	&#8722; You may feel some sense of relief from negative feelings associated with the relationship that resulted from fighting, insecurity, or boredom.
+	Nearly everyone experiences the pain of a breakup of an important love relationship at some point in life.
+	Many people are forced to cope for the first time with the breakup of a significant relationship during their college years.  It is difficult to know just how painful a relationship breakup can be until it happens in one	&#39;s own life.
+	 Intense feelings of sadness and despair are a common reaction to the end of a relationship.  The following are common emotional reactions to the loss of a romantic relationship:
+	 <br> &bull;	Denial 	&#8722; It may be very difficult to believe and accept that the relationship is ending.  It is painful to experience a loved and trusted partner seeming to care so little about the relationship and your feelings.
+	 <br> &bull;	Grief and Despair 	&#8722; It is normal to feel sad and lonely, and to cry a lot.    You may feel an intense need at times to make contact with your ex-partner.  Particular times during the day, such as waking up in the morning, may be especially difficult.
+	 <br> &bull;	Fear 	&#8722; It may be frightening and difficult to imagine life without the significant other.  You may fear that you will never find love or feel happy again.
+	 <br> &bull;	Anger 	&#8722; Anger with a partner who has caused pain by initiating or contributing to the breakup is a common emotional response.
+	 <br> &bull;	Self-blame and Guilt 	&#8722; You may obsess over what you could have done to cause the breakup, and may attempt to “bargain” with an ex-partner to give the relationship another chance.    If you initiated the breakup, you may feel guilty about causing pain to your partner.
+	 <br> &bull;	Jealousy 	&#8722; You may experience jealousy or panic about your partner potentially being with someone else.
+	 <br> &bull;	Confusion 	&#8722; Life may feel strange or incomplete without your significant other.  You may question who you are, and the meaning of life without your partner.
+	 <br> &bull;	Relief 	&#8722; You may feel some sense of relief from negative feelings associated with the relationship that resulted from fighting, insecurity, or boredom.
+
+</p>
+
+<hr><b> Signs of family and relationship problems:</b><br>
+<p>
+	 <br> &bull;Frequent arguing
+	 <br> &bull;Disagreements
+	 <br> &bull;Breakdown in communication
+	 <br> &bull;Angry outbursts
+	 <br> &bull;Avoidance
+	 <br> &bull;Physical conflict
+	 <br> &bull;Triggers for family and relationship problems
+
+	 <br> &bull;Difference in opinions, personalities, beliefs, values or goals
+	 <br> &bull;Change in family circumstances e.g. new baby, divorce/separation, blending families
+	 <br> &bull;Financial problems
+	 <br> &bull;Stress
+	 <br> &bull;Issues relating to sexuality
+	 <br> &bull;Alcohol or drug use
+	 <br> &bull;Gambling problems
+	 <br> &bull;The onset of mental health problems
+	 <br> &bull;Bullying/harassment
+	 <br> &bull;Natural disasters
+	 <br> &bull;Lack of trust/respect in a relationship
+
+</p>
+
+	<hr><b><blockquote> Adjustment issues</blockquote></b><br>
+<p>
+	What Is Adjustment Disorder?
+Adjustment disorder is an unexpectedly strong emotional or behavioural reaction that occurs in response to an identifiable stressful life event or life change that occurred within the previous three months.
+Types of Adjustment Disorder
+Adjustment disorder can be acute (lasting less than six months) or chronic (lasting longer than six months). Keep in mind that the definition of adjustment disorder does not allow the symptoms to last longer than six months after the stressor has terminated. A chronic diagnosis is only allowed if the stressful event or life change is persistent. In addition to an acute and chronic diagnosis, there are six subtypes of adjustment disorder that are classified by the predominant symptoms you are experiencing. The six subtypes are:
+ <br> &bull;	adjustment disorder with depressed mood
+ <br> &bull;	adjustment disorder with anxiety
+ <br> &bull;	adjustment disorder with mixed anxiety and depressed mood
+ <br> &bull;	adjustment disorder with disturbance of conduct
+ <br> &bull;	adjustment disorder with mixed disturbance of emotions and conduct
+ <br> &bull;	unspecified adjustment disorder (problematic thinking and behaviour that is not classifiable by the other adjustment disorder subtypes
+
+What Causes Adjustment Disorder?
+Adjustment disorder develops as a reaction to a stressful life event or a major life change. Events or changes that may cause you to develop adjustment disorder include:
+ <br> &bull;	marital problems
+ <br> &bull;	relationship problems
+ <br> &bull;	divorce
+ <br> &bull;	family conflict
+ <br> &bull;	sexuality issues
+ <br> &bull;	health problems
+ <br> &bull;	death of a loved one
+ <br> &bull;	unexpected catastrophes
+ <br> &bull;	financial problems
+ <br> &bull;	work changes
+ <br> &bull;	school changes
+ <br> &bull;	moving
+ <br> &bull;	major life changes
+ <br> &bull;	general life changes
+ <br> &bull;	ongoing stressful life events
+
+</p>
+
+
+
+ <hr><b><blockquote>Low self- esteem</blockquote></b><hr>
+<p>
+	Self-esteem is your opinion of yourself. People with healthy self-esteem like themselves and value their achievements. While everyone lacks confidence occasionally, people with low self-esteem feel unhappy or unsatisfied with themselves most of the time. This can be remedied but it takes attention and daily practise to boost self-esteem.
+
+See your doctor for information, advice and referral if you	&#39;re having trouble improving your self-esteem or if low self-esteem is causing problems such as depression.
+
+Characteristics of low self-esteem
+
+Typically, a person with low self-esteem:
+
+ <br> &bull;	    Is extremely critical of themselves
+ <br> &bull;	    Downplays or ignores their positive qualities
+ <br> &bull;	    Judges themselves to be inferior to their peers
+ <br> &bull;	    Uses negative words to describe themselves such as stupid, fat, ugly or unlovable
+ <br> &bull;	    Has discussions with themselves (this is called ‘self talk	&#39;) that are always negative, critical and self blaming
+ <br> &bull;	    Assumes that luck plays a large role in all their achievements and doesn	&#39;t take the credit for them
+ <br> &bull;	    Blames themselves when things go wrong instead of taking into account other things over which they have no control such as the actions of other people or economic forces
+ <br> &bull;	    Doesn	&#39;t believe a person who compliments them.
+<br>
+Low self-esteem and quality of life
+</br>
+<b>
+A low self-esteem can reduce the quality of a person&#39;s life in many different ways, including:
+</b>
+ <br> &bull;	Negative feelings 	&#8722; the constant self-criticism can lead to persistent feelings of sadness, depression, anxiety, anger, shame or guilt.
+ <br> &bull;	Relationship problems 	&#8722; for example they may tolerate all sorts of unreasonable behaviour from partners because they believe they must earn love and friendship, cannot be loved or are not loveable. Alternatively, a person with low self-esteem may feel angry and bully other people.
+ <br> &bull;	Fear of trying 	&#8722; the person may doubt their abilities or worth and avoid challenges.
+ <br> &bull;	Perfectionism 	&#8722; a person may push themselves and become an over-achiever to ‘atone	&#39; for what they see as their inferiority.
+ <br> &bull;	Fear of judgement 	&#8722; they may avoid activities that involve other people, like sports or social events, because they are afraid they will be negatively judged. The person feels self-conscious and stressed around others and constantly looks for ‘signs	&#39; that people don	&#39;t like them.
+ <br> &bull;	Low resilience 	&#8722; a person with low self-esteem finds it hard to cope with a challenging life event because they already believe themselves to be ‘hopeless	&#39;.
+ <br> &bull;	Lack of self-care 	&#8722; the person may care so little that they neglect or abuse themselves, for example, drink too much alcohol.
+ <br> &bull;	Self-harming behaviours 	&#8722; low self-esteem puts the person at increased risk of self-harm, for example, eating disorder, drug abuse or suicide.
+
+</p>
+
+<hr>
+<blockquote>
+	Sexual behaviour
+</blockquote>
+<hr><br><p>
+
+Human sexual activity, human sexual practice or human sexual behaviour is the manner in which humans experience and express their sexuality.
+People engage in a variety of sexual acts from time to time, for a wide variety of reasons. Sexual activity normally results in sexual arousal and physiological changes in the aroused person, some of which are pronounced while others are more subtle. Sexual activity may also include conduct and activities which are intended to arouse the sexual interest of another, such as strategies to find or attract partners (courtship and display behaviour), or personal interactions between individuals (for instance, foreplay). Sexual activity may follow sexual arousal.
+
+<br>Human sexual activity has sociological, cognitive, emotional, behavioural and biological aspects; these include personal bonding, sharing emotions and the physiology of the reproductive system, sex drive, sexual intercourse and sexual behaviour in all its forms.
+
+<br>In some cultures, sexual activity is considered acceptable only within marriage, while premarital and extramarital sex are taboo. Some sexual activities are illegal either universally or in some countries, while some are considered contrary to the norms of a society. Two examples that are criminal offenses in most jurisdictions are sexual assault and sexual activity with a person below the local age of consent.
+
+</p>
+<hr>
+<blockquote>
+Pressure related issues:
+</blockquote>
+<br><hr>Peer pressure<hr><br>
+	<p><br>
+		Peer pressure is influence on a peer group, observers or individual exerts that encourages others to change their attitudes, values, or behaviours to conform to groups.
+<br>&bull;	A person affected by peer pressure may or may not want to belong to these groups. They may also recognise dissociative groups with which they would not wish to associate, and thus they behave adversely concerning that group's behaviours.
+
+<br>&bull;	Peer pressure is a part of life for everyone, but it can be an especially strong influence during the teen years when peers are very important to a teen's identity.
+
+<br>&bull;	This means that teens need to learn to handle peer pressure, and to recognize when it is positive and when it is negative.
+
+<br>&bull;	As adolescents enter the teen years, they usually begin to focus more on their peers or friends. The desire to fit in with peers can be a very strong influence on teens. Peers influence most aspects of a teen's life, including how teens dress, what music they listen to, and what kind of activities they are involved in.
+
+<br>&bull;	Peer pressure is not always bad. Negative peer pressure is when teens feel pressured to do something they know is wrong, such as smoking, drinking, doing drugs, or stealing, or something they don't want to do such as cutting class.
+
+<br>&bull;	Teens may be tempted to give in to negative peer pressure because they want to be liked or fit in, they are afraid of being made fun of, or they want to try something other teens are doing. Negative peer pressure will remain a part of a teen's life into adulthood, which is why it is important for teens to learn how to deal with it.
+
+<br><b>
+Decision making</b>
+
+In psychology, decision-making is regarded as the cognitive process resulting in the selection of a belief or a course of action among several alternative possibilities.
+<br>&bull;	Every decision-making process produces a final choice that may or may not prompt action. Decision-making is the process of identifying and choosing alternatives based on the values and preferences of the decision-maker.
+<br>&bull;	Decision-making can be regarded as a problem-solving activity terminated by a solution deemed to be satisfactory. It is, therefore, a process which can be more or less rational or irrational and can be based on explicit knowledge or tacit knowledge.
+
+<br><b>
+Bullying/cyberbullying</b>
+
+Bullying is the use of force, threat, or coercion to abuse, intimidate, or aggressively dominate others. The behaviour is often repeated and habitual.
+<br>&bull;	Behaviours used to assert such domination can include verbal harassment or threat, physical assault or coercion, and such acts may be directed repeatedly towards particular targets.
+<br>&bull;	Rationalizations for such behaviour sometimes include differences of social class, race, religion, gender, sexual orientation, appearance, behaviour, body language, personality, reputation, lineage, strength, size or ability.
+<br>&bull;	If bullying is done by a group, it is called mobbing.
+
+Cyberbullying is a type of bullying. With the increased use of technology, cyberbullying has become increasingly common, especially among teenagers.
+<br>&bull;	It is an action of harming or harassing via information technology networks in a repeated and deliberate manner.
+<br><b>
+Legal definitions:</b>
+Cyberbullying is defined in legal glossaries as
+<br>&bull;	Actions that use information and communication technologies to support deliberate, repeated, and hostile behaviour by an individual or group, that is intended to harm another or others.
+<br>&bull;	use of communication technologies for the intention of harming another person
+<br>&bull;	use of Internet service and mobile technologies such as web pages and discussion groups as well as instant messaging or SMS text messaging with the intention of harming another person.
+</span>
+	</p>
+	</fieldset>
+	</center>
+
+</body>
+<script>
+
+
+$(document).ready(function() {
+    // Configure/customize these variables.
+    var showChar = 30;  // How many characters are shown by default
+    var ellipsestext = "...";
+    var moretext = "Show more >";
+    var lesstext = "Show less";
+
+
+    $('.more').each(function() {
+        var content = $(this).html();
+
+        if(content.length > showChar) {
+
+            var c = content.substr(0, showChar);
+            var h = content.substr(showChar, content.length - showChar);
+
+            var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+
+            $(this).html(html);
+        }
+
+    });
+
+    $(".morelink").click(function(){
+        if($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+    });
+});
+
+</script>
+-->
+
+
+</html>

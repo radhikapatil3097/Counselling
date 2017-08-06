@@ -1,0 +1,325 @@
+<html>
+<head>
+<title>DBIT-Counselling </title>
+<link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/9/97/DBIT_logo.png" type="image/png"></link>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style type="text/css">
+
+		img {
+    			 float: right;
+   			 margin: 0 0 10px 10px;
+			}
+		.imgalign{
+			float: left;
+   			 margin: 10px 10px 10px 10px;
+		
+			}
+		header{
+			background:steelblue;
+			margin:0 0 0 0;
+			}
+      		.mySlides {display:none;}
+
+		blockquote{
+				margin-left:20%;
+				margin-right:20%;
+		    		padding: 5px;
+			    	background-color:steelblue;
+		    		border-left: 10px solid black;
+			}
+		input[type=submit] {
+				background-color: steelblue;
+				color: white;
+				padding: 5px 8px;
+				margin: 4px 0;
+				border: none;
+				border-radius: 3px;
+				cursor: pointer;
+			}
+
+		input[type=submit]:hover {
+				background-color:dark blue;
+			}
+		/*fieldset{
+				margin-left: 25%;
+				margin-right:25%;
+				display: block;
+				width: 50%;
+				box-shadow: 2px solid grey;
+
+			}*/
+		.allign{
+
+				margin-left: 10%;
+				margin-right:10%;
+				display: block;
+				width: 80%;
+				box-shadow: 2px solid grey;
+
+
+
+			}
+		h2 , h3{
+				font-family: serif;
+			}
+		a{
+				text-decoration: none;
+				color:black;
+			}
+
+      		ul{
+				list-style-type: none;
+				margin: 2;
+				padding: 2;
+				overflow: hidden;
+				background-color:steelblue;
+				/*background:#e67e22;*/
+			}
+
+
+		li{
+        		float: left;
+        		border-right:1px solid #161F41;
+			}
+		li a{
+				display: block ;
+				color: white;
+				text-align: right;
+				padding: 10px;
+				text-decoration:none;
+
+			}
+		li a:hover:not(.active){
+				background-color:#161F41;
+				text-decoration:none;
+			}
+      		.active {
+    				background-color:#161F41 ;
+      			}
+
+      		li:last-child {
+    				border-right: none;
+      			}
+
+
+      		body {
+        		background-color:steelblue ;
+        		background-repeat: no-repeat;
+     			}
+
+
+		/*body{
+
+			background-color: steelblue;
+			}*/
+		fieldset{
+			background-color: white;
+			display:block;
+			}
+
+.anchorstyle{
+    float:right;
+}
+
+
+.container {
+    overflow: hidden;
+    background-color: steelblue;
+    font-family: Arial;
+}
+
+.container a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown2{
+
+	float: right;
+        overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.container a:hover, .dropdown:hover .dropbtn {
+    background-color:#161F41 ;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+		
+	
+</style>
+</head>
+<body background-color="steelblue">
+
+
+
+<!--Head icon and name of college-->
+<fieldset>
+<br>
+<header>
+	<table align="center">
+		<tr>
+			<td><img src="dbitlogo.png" alt="DBIT LOGO" style="width: 75px;height: 75px;"></td>
+			<td><font size="6" color="white">DON BOSCO INSTITUTE OF TECHNOLOGY</font><br>
+			    <center><font size="6" color="white">COUNSELLING DEPARTMENT</font></center>
+			</td>
+		</tr>
+	</table>
+</header>
+
+
+<hr>
+
+<!--Navigation Bar-->
+<div class="container">
+  <a href="homepage.html">Home</a>
+  <a href="#">About Us</a>
+  <a href="counselfinal.html">Take a test !</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Food For Thought!</button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="info.html">Food For Thought!</a>
+      <a href="a1.html">Academic problems</a>
+      <a href="a2.html">Addictions</a>
+      <a href="a3.html">Emotional issues</a>
+      <a href="a4.html">Aggression</a>
+      <a href="a5.html">Psychosis</a>
+      <a href="a6.html">LGBT</a>
+      <a href="a7.html">Personal issues</a>
+      <a href="a8.html">Adjustment issues</a>
+      <a href="a9.html">Low self esteem</a>
+      <a href="a10.html">Sexual behaviour</a>
+      <a href="a11.html">Pressure-related issues</a>
+    </div>
+  </div>
+  <a href="http://www.dbit.in/index.php/contact-us">Contact Us</a>
+<div class="dropdown2">
+
+<a href="rad1.php">Admin</a>
+<a href="http://www.dbit.in/">Exit</a> 
+</div>
+</div>
+<br>
+
+
+<!--Code for dropdown-->
+<script>
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+<!--
+
+  <ul id="gp" align="center">
+	  <li><a href="homepage.html" >Home</a></li>
+	  <li><a href="#">About Us</a></li>
+          <li><a href="counselfinal.html">Take a test !</a></li>
+          <li>
+		
+<!--<a href="info.html">Food for thought ! </a>
+</li>
+          <li><a href="http://www.dbit.in/index.php/contact-us">Contact Us</a></li>
+          <li style="float:right"><a href="http://www.dbit.in/">Exit</a></li>
+          <li style="float:right"><a href="rad1.php">Admin</a></li>
+        </ul>
+	<br>
+-->
+</fieldset>
+
+<br><br>
+<!--Text starts...-->
+<fieldset class="allign" back-ground-color="white">
+<p>
+<br>
+<h2 align=center style="color:steelblue">Academic Problems</h2>
+<br><hr>
+<h3 align=center style="color:steelblue">Exam anxiety</h3>
+<hr>
+<img src="j1.jpg" height=200px width=300px>
+Exam or Test anxiety is a combination of physiological over-arousal, tension and somatic symptoms, along with worry, dread, fear of failure, and catastrophizing, that occur before or during test situations.
+It is a physiological condition in which people experience extreme stress, anxiety, and discomfort during and/or before taking a test. This anxiety creates significant barriers to learning and performance.<br>
+<br>&bull;	Inferior performance arises not because of intellectual problems or poor academic preparation, but because testing situations create a sense of threat for those experiencing test anxiety; anxiety resulting from the sense of threat then disrupts attention and memory function.
+<br>&bull;	Students who experience test anxiety tend to be easily distracted during a test, experience difficulty with comprehending relatively simple instructions, and have trouble organizing or recalling relevant information.
+<br>&bull;	Headache, upset stomach, feeling of fear, feeling of dread, shortness of breath, sweating, pacing or fidgeting, crying, racing thoughts and blanking out are some physical symptoms.
+<br>&bull;	During states of excitement or stress, the body releases adrenaline. Adrenaline is known to cause physical symptoms that accompany test anxiety, such as increased heart rate, sweating, and rapid breathing.
+<br><hr>
+<h3 align=center style="color:steelblue">Subject Specific fear</h3>
+<hr>
+<img src="j2.jpg" class="imgalign" height=200px width=300px>
+Subject specific fear/ anxiety is a phenomenon that is often considered, when examining student's problems in a specific academic subject. It a feeling of tension, apprehension, or fear that interferes with one &#8217;s performance in the subject.<br>
+<br>&bull;Subject specific fear/anxiety is related to poor performance on achievement tests and is related to negative attitudes concerning that subject.
+<br>&bull;The anxiety/fear leads to avoidance of that subject. Those having the fear will avoid situations in which they have to deal with that subject.
+<br>&bull;Unfortunately, avoidance results in less competency, exposure and practice, leaving students more anxious and unprepared to achieve.
+<br>&bull;In college and university, anxious students take fewer courses related to that subject and tend to feel negative towards it.
+<br>&bull;When a highly anxious student performs disappointingly on a particular question, it could be due to anxiety, or the lack of competency in the subject because of avoidance.
+<br>&bull;Subject specific anxiety is not simply about being bad at it.
+<br>&bull;The thought of having to study that feared subject causes anxiety.
+<br>&bull;Studies have shown that the area of the brain that is triggered when someone has subject specific fear/anxiety overlaps the same area of the brain where bodily harm is registered.
+<br><hr>
+<h3 align=center style="color:steelblue">Presentation fear</h3>
+<hr>
+<img src="j3.jpg" height=200px width=300px>
+Fear of public speaking i.e. presentation fear is the most common of all phobias. It's a form of performance anxiety in which a person becomes very concerned that he or she will look visibly anxious, maybe even have a panic attack while speaking.
+
+<br>&bull;	Oral presentations are a standard component of pedagogy and assessment, yet are sheer personal torture for many students. Their fear of public performance also renders a presentation less effective as a learning rubric.
+<br>&bull;	Over time, people try to protect themselves by either avoiding public speaking or by struggling against speech anxiety. In this way, people get tricked into making the fear of public speaking more chronic and disruptive.
+<br>&bull;	Some people do this with avoidance. They choose college coursework in such a way as to avoid public speaking, rather than taking the classes they want.
+<br>&bull;	At work, they pass up promotions and assignments which would require speaking.
+<br>&bull;	The fear of public speaking may even lead people to choose a career that doesn't call for public speaking, rather than one they want. This is often the case with people who have feared public speaking from a very young age.
+<br><br>
+</p>
+</fieldset>
+</body>
+</html>

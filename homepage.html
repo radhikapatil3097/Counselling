@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DBIT-Counselling </title>
+	<link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/9/97/DBIT_logo.png" type="image/png"></link>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<style type="text/css">
+
+
+		hr{
+			border:0.1px solid steelblue;
+		}
+
+
+		header{
+				background:steelblue;
+			}
+      .mySlides {display:none;}
+
+		blockquote{
+				margin-left:20%;
+				margin-right:20%;
+		    	padding: 5px;
+			    background-color:steelblue;
+		    	border-left: 10px solid black;
+			}
+		input[type=submit] {
+				background-color: steelblue;
+				color: white;
+				padding: 5px 8px;
+				margin: 4px 0;
+				border: none;
+				border-radius: 3px;
+				cursor: pointer;
+			}
+
+			input[type=submit]:hover {
+				background-color:dark blue;
+			}
+			fieldset{
+				margin-left: 25%;
+				margin-right:25%;
+				display: block;
+				width: 50%;
+				box-shadow: 2px solid grey;
+
+			}
+			h2 , h3{
+				font-family: serif;
+			}
+			a{
+				text-decoration: none;
+				color:black;
+			}
+
+      ul{
+				list-style-type: none;
+				margin: 2;
+				padding: 2;
+				overflow: hidden;
+				background-color:steelblue;
+				/*background:#e67e22;*/
+			}
+
+
+			li{
+        float: left;
+        border-right:1px solid #161F41;
+			}
+			li a{
+				display: block ;
+				color: white;
+				text-align: right;
+				padding: 10px;
+				text-decoration:none;
+
+			}
+			li a:hover:not(.active){
+				background-color:#161F41;
+				text-decoration:none;
+			}
+      .active {
+    background-color:#161F41 ;
+      }
+
+      li:last-child {
+    border-right: none;
+      }
+
+
+      body {
+        background-color: white ;
+        background-repeat: no-repeat;
+     }
+
+     div.gallery {
+    border: 1px solid #ccc;
+    float: left;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+   
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+
+	</style>
+</head>
+<body background-color="white">
+<br>
+	<header>
+	<table align="center">
+		<tr>
+			<td><img src="dbitlogo.png" alt="DBIT LOGO" style="width: 75px;height: 75px;"></td>
+			<td><font size="6" color="white">DON BOSCO INSTITUTE OF TECHNOLOGY</font><br>
+			    <center><font size="6" color="white">COUNSELLING DEPARTMENT</font></center>
+			</td>
+		</tr>
+	</table>
+</header>
+  <hr>
+  <br>
+
+  <ul id="gp" align="center">
+          <li><a href="#" class="active">Home</a></li>
+	  <li><a href="#">About Us</a></li>
+          <li><a href="counselfinal.html">Take a test !</a></li>
+          <li><a href="info.html">Food for thought ! </a></li>
+          <li><a href="http://www.dbit.in/index.php/contact-us">Contact Us</a></li>
+          <li style="float:right"><a href="http://www.dbit.in/">Exit</a></li>
+          <li style="float:right"><a href="rad1.php">Admin</a></li>
+        </ul>
+	<br>
+<div class="w3-content w3-section" width: 800px; height: 600px>
+  <img class="mySlides" src="dbit2.jpg" style="width:100%">
+  <img class="mySlides" src="dbit3.jpg" style="width:100%">
+  <img class="mySlides" src="dbit4.jpg" style="width:100%">
+  <img class="mySlides" src="dbit5.jpg" style="width:100%">
+  <img class="mySlides" src="dbit7.jpg" style="width:100%">
+</div>
+<br>
+</body>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+<br><br>
+<table border=solid align=center width="80%">
+<tr>
+<td colspan="2">
+<h2>OUR COUNSELLORS</h2></td>
+</tr>
+
+<tr>
+
+<td align=center><img src=counsellor1.jpg height="225px" width="300px"></img><br><br><b>Name :</b>Fr Cyril de Souza<br><b>Contact :</b>7506898334<br><b>Email :</b>
+cyril.desouza@gmail.com<br><b>Available :</b>Availability by appointment (Phone or email)</td>
+<td align=center><img src=p2.png height="225px" width="300px"></img><br><br><b>Name :</b><br><b>Contact :</b><br><b>Email :</b><br><b>Available :</b></td>
+
+</tr>
+</table>
+<br><br><br>
+</html>

@@ -1,0 +1,345 @@
+<html>
+<head>
+<style>
+		img {
+    			 float: right;
+   			 margin: 0 0 10px 10px;
+			}
+		.imgalign{
+			float: left;
+   			 margin: 10px 10px 10px 10px;
+		
+			}
+		header{
+			background:steelblue;
+			}
+      		.mySlides {display:none;}
+
+		blockquote{
+				margin-left:20%;
+				margin-right:20%;
+		    		padding: 5px;
+			    	background-color:steelblue;
+		    		border-left: 10px solid black;
+			}
+		input[type=submit] {
+				background-color: steelblue;
+				color: white;
+				padding: 5px 8px;
+				margin: 4px 0;
+				border: none;
+				border-radius: 3px;
+				cursor: pointer;
+			}
+
+		input[type=submit]:hover {
+				background-color:dark blue;
+			}
+		/*fieldset{
+				margin-left: 25%;
+				margin-right:25%;
+				display: block;
+				width: 50%;
+				box-shadow: 2px solid grey;
+
+			}*/
+		.allign{
+
+				margin-left: 10%;
+				margin-right:10%;
+				display: block;
+				width: 80%;
+				box-shadow: 2px solid grey;
+
+
+
+			}
+		h2 , h3{
+				font-family: serif;
+			}
+		a{
+				text-decoration: none;
+				color:black;
+			}
+
+      		ul{
+				list-style-type: none;
+				margin: 2;
+				padding: 2;
+				overflow: hidden;
+				background-color:steelblue;
+				/*background:#e67e22;*/
+			}
+
+
+		li{
+        		float: left;
+        		border-right:1px solid #161F41;
+			}
+		li a{
+				display: block ;
+				color: white;
+				text-align: right;
+				padding: 10px;
+				text-decoration:none;
+
+			}
+		li a:hover:not(.active){
+				background-color:#161F41;
+				text-decoration:none;
+			}
+      		.active {
+    				background-color:#161F41 ;
+      			}
+
+      		li:last-child {
+    				border-right: none;
+      			}
+
+
+      		body {
+        		background-color:steelblue ;
+        		background-repeat: no-repeat;
+     			}
+
+
+		/*body{
+
+			background-color: steelblue;
+			}*/
+		fieldset{
+			background-color: white;
+			}
+
+.anchorstyle{
+    float:right;
+}
+
+
+.container {
+    overflow: hidden;
+    background-color: steelblue;
+    font-family: Arial;
+}
+
+.container a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown2{
+
+	float: right;
+        overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.container a:hover, .dropdown:hover .dropbtn {
+    background-color:#161F41 ;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+	
+</style>
+</head>
+<body>
+<fieldset>
+<header>
+	<table align="center">
+		<tr>
+			<td><img src="dbitlogo.png" alt="DBIT LOGO" style="width: 75px;height: 75px;"></td>
+			<td><font size="6" color="white">DON BOSCO INSTITUTE OF TECHNOLOGY</font><br>
+			    <center><font size="6" color="white">COUNSELLING DEPARTMENT</font></center>
+			</td>
+		</tr>
+	</table>
+</header>
+
+
+<hr>
+<!--Navigation Bar-->
+<div class="container">
+  <a href="homepage.html">Home</a>
+  <a href="#">About Us</a>
+  <a href="counselfinal.html">Take a test !</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Food For Thought!</button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="info.html">Food For Thought!</a>
+      <a href="a1.html">Academic problems</a>
+      <a href="a2.html">Addictions</a>
+      <a href="a3.html">Emotional issues</a>
+      <a href="a4.html">Aggression</a>
+      <a href="a5.html">Psychosis</a>
+      <a href="a6.html">LGBT</a>
+      <a href="a7.html">Personal issues</a>
+      <a href="a8.html">Adjustment issues</a>
+      <a href="a9.html">Low self esteem</a>
+      <a href="a10.html">Sexual behaviour</a>
+      <a href="a11.html">Pressure-related issues</a>
+    </div>
+  </div>
+<div class="dropdown2">
+
+<a href="rad1.php">Admin</a>
+<a href="http://www.dbit.in/">Exit</a> 
+</div>
+</div>
+<br>
+
+
+<!--Code for dropdown-->
+<script>
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+<!--
+  <br>
+
+  <ul id="gp" align="center">
+	  <li><a href="homepage.html" >Home</a></li>
+	  <li><a href="#">About Us</a></li>
+          <li><a href="counselfinal.html">Take a test !</a></li>
+          <li><a href="info.html">Food for thought ! </a></li>
+          <li><a href="http://www.dbit.in/index.php/contact-us">Contact Us</a></li>
+          <li style="float:right"><a href="http://www.dbit.in/">Exit</a></li>
+          <li style="float:right"><a href="rad1.php">Admin</a></li>
+        </ul>
+	<br>
+-->
+</fieldset>
+<br><br>
+<fieldset class="allign">
+<p>
+<br>
+<h2 align=center style="color:steelblue">Emotional Issues</h2>
+<br><hr>
+<h3 align=center style="color:steelblue">Anxiety</h3>
+<hr>
+<img src="j7.jpeg" height=200px width=300px>
+Chronic anxiety, also referred to as generalized anxiety disorder (GAD), is characterized by excessive, exaggerated worry about everyday life events. People with symptoms of GAD tend to always expect disaster and appear to be unable to stop worrying about health, money, family, work or school. Generalized anxiety disorder not only affects the way a person thinks, feels, and behaves, but can lead to physical symptoms as well.<br>
+			<b>
+Signs and symptoms of generalized anxiety disorder include:</b>
+<br>&bull;	excessive, ongoing worry and tension
+<br>&bull;	an unrealistic view of problems
+<br>&bull;	restlessness or a feeling of being edgy
+<br>&bull;	irritability
+<br>&bull;	muscle tension
+<br>&bull;	muscle aches
+<br>&bull;	headaches
+<br>&bull;	sweating
+<br>&bull;	difficulty concentrating
+<br>&bull;	nausea
+<br>&bull;	the need to go to the bathroom frequently
+<br>&bull;	tiredness
+<br>&bull;	fidgeting
+<br>&bull;	trouble falling or staying asleep
+<br>&bull;	trembling
+<br>&bull;	being easily startled
+<br>&bull;	numbness in hands and feet
+<br>&bull;	difficulty swallowing
+<br>&bull;	bouts of difficulty breathing
+<br>&bull;	trembling
+<br>&bull;	twitching
+<br>&bull;	hot flashes
+<br>&bull;	rashes
+
+<br><hr>
+<h3 align=center style="color:steelblue">Depression</h3>
+<hr>
+<img src="j1.jpg" height=200px width=300px class="imgalign">
+Depression is a serious illness that can take a terrible toll on women and families.
+<br>
+	<b>Signs and symptoms of depression include:</b>
+	 <br> &bull;	Loss of interest in normal daily activities
+	 <br> &bull;	Feeling sad or down
+	 <br> &bull;	Feeling hopeless
+	 <br> &bull;	Crying spells for no apparent reason
+	 <br> &bull;	Problems sleeping
+	 <br> &bull;	Trouble focusing or concentrating
+	 <br> &bull;	Difficulty making decisions
+	 <br> &bull;	Unintentional weight gain or loss
+	 <br> &bull;	Irritability
+	 <br> &bull;	Restlessness
+	 <br> &bull;	Being easily annoyed
+	 <br> &bull;	Feeling fatigued or weak
+	 <br> &bull;	Feeling worthless
+	 <br> &bull;	Thoughts of suicide or suicidal behaviour
+	 <br> &bull;	Unexplained physical problems, such as back pain or headaches
+	What Are the Effects of Depression?
+	Depression can lead to a downward spiral of disability, dependency and suicide. Depression can be associated with severe emotional, behavioural, and health problems, including:
+	 <br> &bull;	Suicide
+	 <br> &bull;	Alcohol abuse
+	 <br> &bull;	Substance abuse
+	 <br> &bull;	Anxiety disorders
+	 <br> &bull;	Eating disorders (bulimia, anorexia, compulsive overeating, binge eating)
+	 <br> &bull;	Heart disease and other medical conditions
+	 <br> &bull;	Work or school problems
+	 <br> &bull;	Family conflicts
+	 <br> &bull;	Relationship difficulties
+	 <br> &bull;	Social isolation
+<br><hr>
+<h3 align=center style="color:steelblue">Suicide</h3>
+<hr>
+<img src="j9.jpeg" height=200px width=300px>
+<br> &bull;	Suicide, also known as completed suicide, is the "act of taking one's own life". Attempted suicide or non-fatal suicidal behaviour is self-injury with the desire to end one's life that does not result in death.¬
+ <br> &bull;	 Assisted suicide is when one individual helps another bring about their own death indirectly via providing either advice or the means to the end. This is in contrast to euthanasia, where another person takes a more active role in bringing about a person's death. Suicidal ideations is thoughts of ending one's life but not taking any active efforts to do so.
+<br>There is discussion about the appropriateness of the term commit and its use to describe suicide. Those who object to the use of commit argue that it carries with it implications that suicide is a criminal, sinful or morally wrong act.
+<br><br>
+</p>
+</fieldset>
+</body>
+</html>

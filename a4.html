@@ -1,0 +1,300 @@
+<html>
+
+<head>
+<style>
+		img {
+    			 float: right;
+   			 margin: 0 0 10px 10px;
+			}
+		.imgalign{
+			float: left;
+   			 margin: 10px 10px 10px 10px;
+		
+			}
+		header{
+			background:steelblue;
+			}
+      		.mySlides {display:none;}
+
+		blockquote{
+				margin-left:20%;
+				margin-right:20%;
+		    		padding: 5px;
+			    	background-color:steelblue;
+		    		border-left: 10px solid black;
+			}
+		input[type=submit] {
+				background-color: steelblue;
+				color: white;
+				padding: 5px 8px;
+				margin: 4px 0;
+				border: none;
+				border-radius: 3px;
+				cursor: pointer;
+			}
+
+		input[type=submit]:hover {
+				background-color:dark blue;
+			}
+		/*fieldset{
+				margin-left: 25%;
+				margin-right:25%;
+				display: block;
+				width: 50%;
+				box-shadow: 2px solid grey;
+
+			}*/
+		.allign{
+
+				margin-left: 10%;
+				margin-right:10%;
+				display: block;
+				width: 80%;
+				box-shadow: 2px solid grey;
+
+
+
+			}
+		h2 , h3{
+				font-family: serif;
+			}
+		a{
+				text-decoration: none;
+				color:black;
+			}
+
+      		ul{
+				list-style-type: none;
+				margin: 2;
+				padding: 2;
+				overflow: hidden;
+				background-color:steelblue;
+				/*background:#e67e22;*/
+			}
+
+
+		li{
+        		float: left;
+        		border-right:1px solid #161F41;
+			}
+		li a{
+				display: block ;
+				color: white;
+				text-align: right;
+				padding: 10px;
+				text-decoration:none;
+
+			}
+		li a:hover:not(.active){
+				background-color:#161F41;
+				text-decoration:none;
+			}
+      		.active {
+    				background-color:#161F41 ;
+      			}
+
+      		li:last-child {
+    				border-right: none;
+      			}
+
+
+      		body {
+        		background-color:steelblue ;
+        		background-repeat: no-repeat;
+     			}
+
+
+		/*body{
+
+			background-color: steelblue;
+			}*/
+		fieldset{
+			background-color: white;
+			}
+
+.anchorstyle{
+    float:right;
+}
+
+
+.container {
+    overflow: hidden;
+    background-color: steelblue;
+    font-family: Arial;
+}
+
+.container a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown2{
+
+	float: right;
+        overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.container a:hover, .dropdown:hover .dropbtn {
+    background-color:#161F41 ;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+	
+	
+</style>
+</head>
+<body>
+<fieldset>
+<header>
+	<table align="center">
+		<tr>
+			<td><img src="dbitlogo.png" alt="DBIT LOGO" style="width: 75px;height: 75px;"></td>
+			<td><font size="6" color="white">DON BOSCO INSTITUTE OF TECHNOLOGY</font><br>
+			    <center><font size="6" color="white">COUNSELLING DEPARTMENT</font></center>
+			</td>
+		</tr>
+	</table>
+</header>
+
+
+<hr>
+<!--Navigation Bar-->
+<div class="container">
+  <a href="homepage.html">Home</a>
+  <a href="#">About Us</a>
+  <a href="counselfinal.html">Take a test !</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Food For Thought!</button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="info.html">Food For Thought!</a>
+      <a href="a1.html">Academic problems</a>
+      <a href="a2.html">Addictions</a>
+      <a href="a3.html">Emotional issues</a>
+      <a href="a4.html">Aggression</a>
+      <a href="a5.html">Psychosis</a>
+      <a href="a6.html">LGBT</a>
+      <a href="a7.html">Personal issues</a>
+      <a href="a8.html">Adjustment issues</a>
+      <a href="a9.html">Low self esteem</a>
+      <a href="a10.html">Sexual behaviour</a>
+      <a href="a11.html">Pressure-related issues</a>
+    </div>
+  </div>
+<div class="dropdown2">
+
+<a href="rad1.php">Admin</a>
+<a href="http://www.dbit.in/">Exit</a> 
+</div>
+</div>
+<br>
+
+
+<!--Code for dropdown-->
+<script>
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+<!--
+  <br>
+
+  <ul id="gp" align="center">
+	  <li><a href="homepage.html" >Home</a></li>
+	  <li><a href="#">About Us</a></li>
+          <li><a href="counselfinal.html">Take a test !</a></li>
+          <li><a href="info.html">Food for thought ! </a></li>
+          <li><a href="http://www.dbit.in/index.php/contact-us">Contact Us</a></li>
+          <li style="float:right"><a href="http://www.dbit.in/">Exit</a></li>
+          <li style="float:right"><a href="rad1.php">Admin</a></li>
+        </ul>
+	<br>
+-->
+</fieldset>
+<br><br>
+
+
+<fieldset class="allign">
+<p>
+<br>
+<h2 align=center style="color:steelblue">Aggression</h2><br>
+<hr>
+In psychology, the term aggression refers to a range of behaviours that can result in both physical and psychological harm to oneself, other or objects in the environment. The expression of aggression can occur in a number of ways, including verbally, mentally, and physically. Psychologists distinguish between different forms of aggression, different purposes of aggression, and different types of aggression.
+<br><b>	Forms of Aggression </b><br>
+	Aggression can take a variety of forms, including:
+	 <br> &bull;	Physical
+	 <br> &bull;	Verbal
+	 <br> &bull;	Mental
+	 <br> &bull;	Emotional
+	 <br>
+<b>	Purposes of Aggression</b><br>
+	Aggression can also serve a number of different purposes:
+	 <br> &bull;	To express anger or hostility
+	 <br> &bull;	To assert dominance
+	 <br> &bull;	To intimidate or threaten
+	 <br> &bull;	To achieve a goal
+	 <br> &bull;	To express possession
+	 <br> &bull;	A response to fear<br>
+	<b>Two Types of Aggression</b><br>
+	Psychologists also distinguish between two different types of aggression:
+<img src="j10.jpg" height=200px width=300px>
+	 <br> &bull;	<b>Impulsive aggression</b>, also known as affective aggression, is characterized by strong emotions, usually anger. This form of aggression is not planned and often takes place in the heat of the moment. When another car cuts you off in traffic and you begin yelling and berating the other driver, you are experiencing impulsive aggression.
+<img src="j11.jpg" height=200px width=300px class="imgalign">
+	 <br> &bull;	<b>Instrumental aggression</b>, also known as predatory aggression, is marked by behaviours that are intended to achieve a larger goal. Instrumental aggression is often carefully planned and usually exists as a means to an end. Hurting another person in a robbery or car-jacking is an example of this type of aggression. The aggressors goal is to obtain money or a vehicle, and harming another individual is the means to achieve that aim.
+	 <br><br>
+</p>
+</fieldset>
+</body>
+</html>

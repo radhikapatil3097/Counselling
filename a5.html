@@ -1,0 +1,301 @@
+<html>
+
+<head>
+<style>
+img {
+    			 float: right;
+   			 margin: 0 0 10px 10px;
+			}
+		.imgalign{
+			float: left;
+   			 margin: 10px 10px 10px 10px;
+		
+			}
+		header{
+			background:steelblue;
+			}
+      		.mySlides {display:none;}
+
+		blockquote{
+				margin-left:20%;
+				margin-right:20%;
+		    		padding: 5px;
+			    	background-color:steelblue;
+		    		border-left: 10px solid black;
+			}
+		input[type=submit] {
+				background-color: steelblue;
+				color: white;
+				padding: 5px 8px;
+				margin: 4px 0;
+				border: none;
+				border-radius: 3px;
+				cursor: pointer;
+			}
+
+		input[type=submit]:hover {
+				background-color:dark blue;
+			}
+		/*fieldset{
+				margin-left: 25%;
+				margin-right:25%;
+				display: block;
+				width: 50%;
+				box-shadow: 2px solid grey;
+
+			}*/
+		.allign{
+
+				margin-left: 10%;
+				margin-right:10%;
+				display: block;
+				width: 80%;
+				box-shadow: 2px solid grey;
+
+
+
+			}
+		h2 , h3{
+				font-family: serif;
+			}
+		a{
+				text-decoration: none;
+				color:black;
+			}
+
+      		ul{
+				list-style-type: none;
+				margin: 2;
+				padding: 2;
+				overflow: hidden;
+				background-color:steelblue;
+				/*background:#e67e22;*/
+			}
+
+
+		li{
+        		float: left;
+        		border-right:1px solid #161F41;
+			}
+		li a{
+				display: block ;
+				color: white;
+				text-align: right;
+				padding: 10px;
+				text-decoration:none;
+
+			}
+		li a:hover:not(.active){
+				background-color:#161F41;
+				text-decoration:none;
+			}
+      		.active {
+    				background-color:#161F41 ;
+      			}
+
+      		li:last-child {
+    				border-right: none;
+      			}
+
+
+      		body {
+        		background-color:steelblue ;
+        		background-repeat: no-repeat;
+     			}
+
+
+		/*body{
+
+			background-color: steelblue;
+			}*/
+		fieldset{
+			background-color: white;
+			}
+
+.anchorstyle{
+    float:right;
+}
+
+
+.container {
+    overflow: hidden;
+    background-color: steelblue;
+    font-family: Arial;
+}
+
+.container a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown2{
+
+	float: right;
+        overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.container a:hover, .dropdown:hover .dropbtn {
+    background-color:#161F41 ;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+	
+</style>
+</head>
+
+<body>
+
+<fieldset>
+<header>
+	<table align="center">
+		<tr>
+			<td><img src="dbitlogo.png" alt="DBIT LOGO" style="width: 75px;height: 75px;"></td>
+			<td><font size="6" color="white">DON BOSCO INSTITUTE OF TECHNOLOGY</font><br>
+			    <center><font size="6" color="white">COUNSELLING DEPARTMENT</font></center>
+			</td>
+		</tr>
+	</table>
+</header>
+
+
+<hr>
+<!--Navigation Bar-->
+<div class="container">
+  <a href="homepage.html">Home</a>
+  <a href="#">About Us</a>
+  <a href="counselfinal.html">Take a test !</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Food For Thought!</button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="info.html">Food For Thought!</a>
+      <a href="a1.html">Academic problems</a>
+      <a href="a2.html">Addictions</a>
+      <a href="a3.html">Emotional issues</a>
+      <a href="a4.html">Aggression</a>
+      <a href="a5.html">Psychosis</a>
+      <a href="a6.html">LGBT</a>
+      <a href="a7.html">Personal issues</a>
+      <a href="a8.html">Adjustment issues</a>
+      <a href="a9.html">Low self esteem</a>
+      <a href="a10.html">Sexual behaviour</a>
+      <a href="a11.html">Pressure-related issues</a>
+    </div>
+  </div>
+<div class="dropdown2">
+
+<a href="rad1.php">Admin</a>
+<a href="http://www.dbit.in/">Exit</a> 
+</div>
+</div>
+<br>
+
+
+<!--Code for dropdown-->
+<script>
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+<!--
+  <br>
+
+  <ul id="gp" align="center">
+	  <li><a href="homepage.html" >Home</a></li>
+	  <li><a href="#">About Us</a></li>
+          <li><a href="counselfinal.html">Take a test !</a></li>
+          <li><a href="info.html">Food for thought ! </a></li>
+          <li><a href="http://www.dbit.in/index.php/contact-us">Contact Us</a></li>
+          <li style="float:right"><a href="http://www.dbit.in/">Exit</a></li>
+          <li style="float:right"><a href="rad1.php">Admin</a></li>
+        </ul>
+	<br>
+-->
+</fieldset>
+
+<br><br>
+
+
+<fieldset class="allign">
+<p>
+<br>
+<h2 align=center style="color:steelblue">Psychosis</h2>
+<hr><br>
+The term ‘psychosis' is used to describe when a person loses touch with reality. Young people can behave very differently when they are feeling stressed, confused or very upset. In fact, these are rarely signs of mental illness. Psychosis is usually more severe and disabling.
+			<br>
+			<b>How common is it?</b><br>
+
+‘Psychosis' can affect people of all ages, but becomes increasingly common as people reach young adulthood.
+<br><b>
+	What causes psychosis?
+</b><br>
+<img src="j12.jpg" height=200px width=300px>
+When a person has a psychotic episode, it can be a signal of an underlying illness. You can have a ‘psychotic breakdown	&#39; after a stressful event like losing a close friend or relative. It can also be the result of a physical illness like a severe infection, the use of illegal drugs like cannabis, or a severe mental illness like schizophrenia or bipolar disorder. Sometimes it is difficult to know what caused the illness.
+These pages explain what psychosis is and its possible causes and treatments. You will find them useful if you are affected by psychosis or if you have a friend or family member who is affected.
+ <br> &bull;	Psychosis is a medical term used to describe hearing or seeing things, or holding unusual beliefs that other people do not share.
+ <br> &bull;	Common examples include hearing voices or believing that people are trying to do you harm.
+ <br> &bull;	You can experience psychosis for a wide variety of reasons. For example it can be due to having a mental illness such as schizophrenia or bipolar disorder. It can also be caused by drug use, brain injury or extreme stress.
+ <br> &bull;	There is no one single cause of psychosis but researchers believe that genes, biological factors and environment may play a part.
+ <br> &bull;	In the NHS, you should be offered medication and cognitive behavioural therapy (CBT) to help with your symptoms.
+ <br> &bull;	To access treatment for psychosis, you usually need to have an assessment by specialist mental health services.
+ <br> &bull;	If you are experiencing very severe psychotic symptoms you may need more urgent help such as going into hospital.
+ <br> &bull;	If you are trying to communicate with a person experiencing psychosis there are communication methods you can try.
+ <br> &bull;	There are different perspectives on how we should view and deal with psychosis. This includes listening to the voices or trying to understand the meaning of the unusual beliefs.<br>
+<br><hr>
+<br>
+</p>
+</fieldset>
+</body>
+</html>

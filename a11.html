@@ -1,0 +1,318 @@
+<html>
+<body>
+<head>
+<title>DBIT-Counselling </title>
+	<link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/9/97/DBIT_logo.png" type="image/png"></link>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+
+		img {
+    			 float: right;
+   			 margin: 0 0 10px 10px;
+			}
+		.imgalign{
+			float: left;
+   			 margin: 10px 10px 10px 10px;
+		
+			}
+		header{
+			background:steelblue;
+			}
+      		.mySlides {display:none;}
+
+		blockquote{
+				margin-left:20%;
+				margin-right:20%;
+		    		padding: 5px;
+			    	background-color:steelblue;
+		    		border-left: 10px solid black;
+			}
+		input[type=submit] {
+				background-color: steelblue;
+				color: white;
+				padding: 5px 8px;
+				margin: 4px 0;
+				border: none;
+				border-radius: 3px;
+				cursor: pointer;
+			}
+
+		input[type=submit]:hover {
+				background-color:dark blue;
+			}
+		/*fieldset{
+				margin-left: 25%;
+				margin-right:25%;
+				display: block;
+				width: 50%;
+				box-shadow: 2px solid grey;
+
+			}*/
+		.allign{
+
+				margin-left: 10%;
+				margin-right:10%;
+				display: block;
+				width: 80%;
+				box-shadow: 2px solid grey;
+
+
+
+			}
+		h2 , h3{
+				font-family: serif;
+			}
+		a{
+				text-decoration: none;
+				color:black;
+			}
+
+      		ul{
+				list-style-type: none;
+				margin: 2;
+				padding: 2;
+				overflow: hidden;
+				background-color:steelblue;
+				/*background:#e67e22;*/
+			}
+
+
+		li{
+        		float: left;
+        		border-right:1px solid #161F41;
+			}
+		li a{
+				display: block ;
+				color: white;
+				text-align: right;
+				padding: 10px;
+				text-decoration:none;
+
+			}
+		li a:hover:not(.active){
+				background-color:#161F41;
+				text-decoration:none;
+			}
+      		.active {
+    				background-color:#161F41 ;
+      			}
+
+      		li:last-child {
+    				border-right: none;
+      			}
+
+
+      		body {
+        		background-color:steelblue ;
+        		background-repeat: no-repeat;
+     			}
+
+
+		/*body{
+
+			background-color: steelblue;
+			}*/
+		fieldset{
+			background-color: white;
+			}
+
+.anchorstyle{
+    float:right;
+}
+
+
+.container {
+    overflow: hidden;
+    background-color: steelblue;
+    font-family: Arial;
+}
+
+.container a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown2{
+
+	float: right;
+        overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.container a:hover, .dropdown:hover .dropbtn {
+    background-color:#161F41 ;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+	
+	
+</style>
+</head>
+<body>
+<fieldset>
+<header>
+	<table align="center">
+		<tr>
+			<td><img src="dbitlogo.png" alt="DBIT LOGO" style="width: 75px;height: 75px;"></td>
+			<td><font size="6" color="white">DON BOSCO INSTITUTE OF TECHNOLOGY</font><br>
+			    <center><font size="6" color="white">COUNSELLING DEPARTMENT</font></center>
+			</td>
+		</tr>
+	</table>
+</header>
+
+
+<hr>
+<!--Navigation Bar-->
+<div class="container">
+  <a href="homepage.html">Home</a>
+  <a href="#">About Us</a>
+  <a href="counselfinal.html">Take a test !</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Food For Thought!</button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="info.html">Food For Thought!</a>
+      <a href="a1.html">Academic problems</a>
+      <a href="a2.html">Addictions</a>
+      <a href="a3.html">Emotional issues</a>
+      <a href="a4.html">Aggression</a>
+      <a href="a5.html">Psychosis</a>
+      <a href="a6.html">LGBT</a>
+      <a href="a7.html">Personal issues</a>
+      <a href="a8.html">Adjustment issues</a>
+      <a href="a9.html">Low self esteem</a>
+      <a href="a10.html">Sexual behaviour</a>
+      <a href="a11.html">Pressure-related issues</a>
+    </div>
+  </div>
+<div class="dropdown2">
+
+<a href="rad1.php">Admin</a>
+<a href="http://www.dbit.in/">Exit</a> 
+</div>
+</div>
+<br>
+
+
+<!--Code for dropdown-->
+<script>
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+<!--
+  <br>
+
+  <ul id="gp" align="center">
+	  <li><a href="homepage.html" >Home</a></li>
+	  <li><a href="#">About Us</a></li>
+          <li><a href="counselfinal.html">Take a test !</a></li>
+          <li><a href="info.html">Food for thought ! </a></li>
+          <li><a href="http://www.dbit.in/index.php/contact-us">Contact Us</a></li>
+          <li style="float:right"><a href="http://www.dbit.in/">Exit</a></li>
+          <li style="float:right"><a href="rad1.php">Admin</a></li>
+        </ul>
+	<br>
+-->
+</fieldset>
+<br><br>
+<fieldset class="allign">
+<br>
+<h2 align=center style="color:steelblue">Pressure related issues:
+</h2>
+<br><hr>
+<h3 align=center style="color:steelblue">Peer pressure</h3>
+<hr>
+<img src="j18.jpg" height=250 width=350>
+Peer pressure is influence on a peer group, observers or individual exerts that encourages others to change their attitudes, values, or behaviours to conform to groups.
+<br>&bull;	A person affected by peer pressure may or may not want to belong to these groups. They may also recognise dissociative groups with which they would not wish to associate, and thus they behave adversely concerning that group's behaviours.
+
+<br>&bull;	Peer pressure is a part of life for everyone, but it can be an especially strong influence during the teen years when peers are very important to a teen's identity.
+
+<br>&bull;	This means that teens need to learn to handle peer pressure, and to recognize when it is positive and when it is negative.
+
+<br>&bull;	As adolescents enter the teen years, they usually begin to focus more on their peers or friends. The desire to fit in with peers can be a very strong influence on teens. Peers influence most aspects of a teen's life, including how teens dress, what music they listen to, and what kind of activities they are involved in.
+
+<br>&bull;	Peer pressure is not always bad. Negative peer pressure is when teens feel pressured to do something they know is wrong, such as smoking, drinking, doing drugs, or stealing, or something they don't want to do such as cutting class.
+
+<br>&bull;	Teens may be tempted to give in to negative peer pressure because they want to be liked or fit in, they are afraid of being made fun of, or they want to try something other teens are doing. Negative peer pressure will remain a part of a teen's life into adulthood, which is why it is important for teens to learn how to deal with it.
+<br><hr>
+<h3 align=center style="color:steelblue">Decision making</h3>
+<hr>
+<img src="j20.jpeg" height=250 width=350 class=imgalign>
+In psychology, decision-making is regarded as the cognitive process resulting in the selection of a belief or a course of action among several alternative possibilities.
+<br>&bull;	Every decision-making process produces a final choice that may or may not prompt action. Decision-making is the process of identifying and choosing alternatives based on the values and preferences of the decision-maker.
+<br>&bull;	Decision-making can be regarded as a problem-solving activity terminated by a solution deemed to be satisfactory. It is, therefore, a process which can be more or less rational or irrational and can be based on explicit knowledge or tacit knowledge.
+<br><br><br><hr>
+<h3 align=center style="color:steelblue">Bullying/cyberbullying</h3>
+<hr>
+<img src="j19.jpeg" height=250 width=350>
+Bullying is the use of force, threat, or coercion to abuse, intimidate, or aggressively dominate others. The behaviour is often repeated and habitual.
+<br>&bull;	Behaviours used to assert such domination can include verbal harassment or threat, physical assault or coercion, and such acts may be directed repeatedly towards particular targets.
+<br>&bull;	Rationalizations for such behaviour sometimes include differences of social class, race, religion, gender, sexual orientation, appearance, behaviour, body language, personality, reputation, lineage, strength, size or ability.
+<br>&bull;	If bullying is done by a group, it is called mobbing.
+
+Cyberbullying is a type of bullying. With the increased use of technology, cyberbullying has become increasingly common, especially among teenagers.
+<br>&bull;	It is an action of harming or harassing via information technology networks in a repeated and deliberate manner.
+<br><b>
+Legal definitions:</b>
+Cyberbullying is defined in legal glossaries as
+<br>&bull;	Actions that use information and communication technologies to support deliberate, repeated, and hostile behaviour by an individual or group, that is intended to harm another or others.
+<br>&bull;	use of communication technologies for the intention of harming another person
+<br>&bull;	use of Internet service and mobile technologies such as web pages and discussion groups as well as instant messaging or SMS text messaging with the intention of harming another person.
+
+<br><br>
+</fieldset>
+</html>

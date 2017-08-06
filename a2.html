@@ -1,0 +1,359 @@
+<html>
+
+<head>
+<style>
+img {
+    			 float: right;
+   			 margin: 0 0 10px 10px;
+			}
+		.imgalign{
+			float: left;
+   			 margin: 10px 10px 10px 10px;
+		
+			}
+		header{
+			background:steelblue;
+			}
+      		.mySlides {display:none;}
+
+		blockquote{
+				margin-left:20%;
+				margin-right:20%;
+		    		padding: 5px;
+			    	background-color:steelblue;
+		    		border-left: 10px solid black;
+			}
+		input[type=submit] {
+				background-color: steelblue;
+				color: white;
+				padding: 5px 8px;
+				margin: 4px 0;
+				border: none;
+				border-radius: 3px;
+				cursor: pointer;
+			}
+
+		input[type=submit]:hover {
+				background-color:dark blue;
+			}
+		/*fieldset{
+				margin-left: 25%;
+				margin-right:25%;
+				display: block;
+				width: 50%;
+				box-shadow: 2px solid grey;
+
+			}*/
+		.allign{
+
+				margin-left: 10%;
+				margin-right:10%;
+				display: block;
+				width: 80%;
+				box-shadow: 2px solid grey;
+
+
+
+			}
+		h2 , h3{
+				font-family: serif;
+			}
+		a{
+				text-decoration: none;
+				color:black;
+			}
+
+      		ul{
+				list-style-type: none;
+				margin: 2;
+				padding: 2;
+				overflow: hidden;
+				background-color:steelblue;
+				/*background:#e67e22;*/
+			}
+
+
+		li{
+        		float: left;
+        		border-right:1px solid #161F41;
+			}
+		li a{
+				display: block ;
+				color: white;
+				text-align: right;
+				padding: 10px;
+				text-decoration:none;
+
+			}
+		li a:hover:not(.active){
+				background-color:#161F41;
+				text-decoration:none;
+			}
+      		.active {
+    				background-color:#161F41 ;
+      			}
+
+      		li:last-child {
+    				border-right: none;
+      			}
+
+
+      		body {
+        		background-color:steelblue ;
+        		background-repeat: no-repeat;
+     			}
+
+
+		/*body{
+
+			background-color: steelblue;
+			}*/
+		fieldset{
+			background-color: white;
+			}
+
+			}
+.anchorstyle{
+    float:right;
+}
+
+
+.container {
+    overflow: hidden;
+    background-color: steelblue;
+    font-family: Arial;
+}
+
+.container a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown2{
+
+	float: right;
+        overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.container a:hover, .dropdown:hover .dropbtn {
+    background-color:#161F41 ;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+	
+</style>
+</head>
+<body>
+<fieldset>
+<header>
+	<table align="center">
+		<tr>
+			<td><img src="dbitlogo.png" alt="DBIT LOGO" style="width: 75px;height: 75px;"></td>
+			<td><font size="6" color="white">DON BOSCO INSTITUTE OF TECHNOLOGY</font><br>
+			    <center><font size="6" color="white">COUNSELLING DEPARTMENT</font></center>
+			</td>
+		</tr>
+	</table>
+</header>
+
+
+<hr>
+
+
+<!--Navigation Bar-->
+<div class="container">
+  <a href="homepage.html">Home</a>
+  <a href="#">About Us</a>
+  <a href="counselfinal.html">Take a test !</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Food For Thought!</button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="info.html">Food For Thought!</a>
+      <a href="a1.html">Academic problems</a>
+      <a href="a2.html">Addictions</a>
+      <a href="a3.html">Emotional issues</a>
+      <a href="a4.html">Aggression</a>
+      <a href="a5.html">Psychosis</a>
+      <a href="a6.html">LGBT</a>
+      <a href="a7.html">Personal issues</a>
+      <a href="a8.html">Adjustment issues</a>
+      <a href="a9.html">Low self esteem</a>
+      <a href="a10.html">Sexual behaviour</a>
+      <a href="a11.html">Pressure-related issues</a>
+    </div>
+  </div>
+<div class="dropdown2">
+
+<a href="rad1.php">Admin</a>
+<a href="http://www.dbit.in/">Exit</a> 
+</div>
+</div>
+<br>
+
+
+<!--Code for dropdown-->
+<script>
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+<!--
+  <br>
+
+  <ul id="gp" align="center">
+	  <li><a href="homepage.html" >Home</a></li>
+	  <li><a href="#">About Us</a></li>
+          <li><a href="counselfinal.html">Take a test !</a></li>
+          <li><a href="info.html">Food for thought ! </a></li>
+          <li><a href="http://www.dbit.in/index.php/contact-us">Contact Us</a></li>
+          <li style="float:right"><a href="http://www.dbit.in/">Exit</a></li>
+          <li style="float:right"><a href="rad1.php">Admin</a></li>
+        </ul>
+	<br>
+-->
+</fieldset>
+<br>
+<br>
+<fieldset class="allign">
+<p>
+<h2 align=center style="color:steelblue">Addictions</h2><br><br><hr>
+
+Addiction can be defined as the continued use of a mood altering substance or behaviour despite adverse consequences.
+Some addicts are good at hiding the extent of their dependence, but there is usually at least some evidence that something is not right. Friends and family are most often the ones who first become aware of the addiction, and they will become concerned.
+The most common reaction is for the addict to then become defensive when these concerns are mentioned. They are in denial about the problem. As the downward spiral continues the evidence of the addiction becomes increasingly obvious until even the addict is unable to deny it.
+The symptoms of addiction will be psychological and physical in nature.
+<hr><h3 style="color:steelblue">The  psychological symptoms of addiction can include:</h3><br>
+<br>&bull;	Intense cravings to use the substance.
+<br>&bull;	Feelings of high anxiety if they try to end the addiction.
+<br>&bull;	Loss of appetite.
+<br>&bull;	 The person feels unable to cope without this substance.
+<br>&bull;	 Denial about their problems
+<br>&bull;	Feelings of restlessness when not using the substance
+<br>&bull;	A mental obsession with obtaining and using alcohol or drugs.
+<br>&bull;	Symptoms of depression when the individual tries to stop using the substance.
+<br>&bull;	Anxiety at the thought of not having access to the substance.
+<br>&bull;	Insomnia if the person doesn	&#x27;t use the drug or perform the behaviour.
+<br>&bull;	The individual can continue to romance the drink or drug many years after they have stopped using it. The cravings occur less frequently once the individual has established themselves in recovery, but they can still reappear at the most unexpected moments.
+<br>&bull;	Mood swings
+<br>&bull;	Physical damage to the brain leads to psychological symptoms such as loss of memory, personality changes, or confusion. An example of this would be alcoholic dementia.
+<hr><h3 style="color:steelblue">The  physical symptoms of addiction can include:</h3><br>
+<br>&bull;	Nausea and vomiting
+<br>&bull;	Body aches
+<br>&bull;	Seizures
+<br>&bull;	Changes to pulse rate
+<br>&bull;	Changes to blood pressure
+<br>&bull;	Noticeable shaking or body tremors
+<br>&bull;	Headaches
+<br>&bull;	Sweating
+<br>&bull;	High temperatures
+<br>&bull;	Changes to respiratory rate
+<br>&bull;	Diarrhoea
+<br>&bull;	Restless leg syndrome
+<br>
+
+
+<hr><h3 align=center style="color:steelblue">Alcohol</h3><hr>
+<img src="j4.jpg" height=200px width=300px>
+
+	Alcohol addiction, also known as alcoholism, is a widespread disease that affects people of all walks of life. While experts have long tried to pinpoint genetic, gender, racial, or socioeconomic factors that may predispose someone to alcohol addiction, it appears that it has no singular cause and can afflict anyone.
+	Sign and Symptoms:-
+	Physical signs of alcohol overconsumption and intoxication are recognizable by most adults:<br>
+	<br>&bull;	Slurred or incoherent speech
+	<br>&bull;	Poor balance and clumsiness
+	<br>&bull;	Delayed reflexes
+	<br>&bull;	Stomach pains, vomiting or nausea
+	<br>&bull;	Loss of consciousness or blacking-out
+	<br>&bull;	Redness of the face during or after periods of consumption
+	It is possible for a person to reach a level of intoxication that becomes life-threatening (alcohol poisoning). The respiratory system becomes depressed, and the person will stop breathing.
+
+	How Does Alcohol Affect the Body?
+	<br>&bull;	Alcohol acts as a depressant on the central nervous system. It has a complex mode of action and affects multiple systems in the brain
+	<br>&bull;	 Alcohol is metabolized by the liver. Long term consumption of alcohol in excessive amounts can cause irreversible damage to the liver.
+<br>
+
+<hr><h3 align=center style="color:steelblue">Drugs</h3><hr>
+<img src="j5.jpeg" height=200px width=300px class="imgalign">
+<p>What Is Drug Addiction?<br>
+<br>&bull;	Addiction is a chronic, often relapsing brain disease that causes compulsive drug seeking and use, despite harmful consequences to the addicted individual and to those around him or her.
+<br>&bull;	 Although the initial decision to take drugs is voluntary for most people, the brain changes that occur over time challenge an addicted person	&#x27;s self-control and hamper his or her ability to resist intense impulses to take drugs.
+Why Do Some People Become Addicted While Others Do Not?
+No single factor can predict whether a person will become addicted to drugs. Risk for addiction is influenced by a combination of factors that include individual biology, social environment, and age or stage of development. The more risk factors an individual has, the greater the chance that taking drugs can lead to addiction. For example:
+<br>&bull;	Biology. The genes that people are born with, in combination with environmental influences, account for about half of their addiction vulnerability. Additionally, gender, ethnicity, and the presence of other mental disorders may influence risk for drug abuse and addiction.
+<br>&bull;	Environment. A person	&#x27;s environment includes many different influences, from family and friends to socioeconomic status and quality of life in general. Factors such as peer pressure, physical and sexual abuse, stress, and quality of parenting can greatly influence the occurrence of drug abuse and the escalation to addiction in a person	&#x27;s life.
+<br>&bull;	Development. Genetic and environmental factors interact with critical developmental stages in a person	&#x27;s life to affect addiction vulnerability. Although taking drugs at any age can lead to addiction, the earlier that drug use begins, the more likely it will progress to more serious abuse, which poses a special challenge to adolescents. Because areas in their brains that govern decision making, judgment, and self-control are still developing, adolescents may be especially prone to risk-taking behaviours, including trying drugs of abuse.
+</p><br>
+
+<hr><h3 align=center style="color:steelblue">Smoking</h3><hr>
+<img src="j6.jpg" height=200px width=300px>
+Nicotine is a drug found naturally in tobacco, which is as addictive as heroin or cocaine: When taken in small amounts, nicotine creates pleasant feelings that make the smoker want to smoke more. It acts on the chemistry of the brain and central nervous system, affecting the smoker's mood.
+    Why is nicotine addictive?
+		<br>
+<br>&bull;	When you use tobacco products, nicotine is quickly absorbed into your bloodstream. Within 10 seconds of entering your body, the nicotine reaches your brain. It causes the brain to release adrenaline, creating a buzz of pleasure and energy.
+<br>&bull;	The buzz fades quickly though, and leaves you feeling tired, a little down, and wanting the buzz again. This feeling is what makes you light up the next cigarette. Since your body is able to build up a high tolerance to nicotine, you	&#39;ll need to smoke more and more cigarettes in order to get the nicotine	&#39;s pleasurable effects and prevent withdrawal symptoms.This up and down cycle repeats over and over, leading to addiction.
+
+<hr>The Effects of Smoking on the Body<br><br>
+    Tobacco smoke is enormously harmful to your health. There	&#39;s no safe way to smoke. Replacing your cigarette with a cigar, pipe, or hookah won	&#39;t help you avoid the health risks associated with tobacco products.
+
+<br>&bull;	Central Nervous System
+<br>&bull;	Respiratory System
+<br>&bull;	Cardiovascular System
+<br>&bull;	Skin, Hair, and Nails (Integumentary System)
+<br>&bull;	Digestive System
+<br>	&bull;	Sexuality and Reproductive System
+</p>
+</fieldset>
+<body>
+</html>
